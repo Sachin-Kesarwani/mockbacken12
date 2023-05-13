@@ -6,7 +6,7 @@ let app= express()
 let cors=require("cors")
 let empRouter=require("./Routes/route.emp")
 const authentication = require("./Middleware/Authentication")
-const userModel = require("../../../../../unit-6/sprint-4/evaluation/backend/models/users.model")
+
 app.use(cors())
 app.use(express.json())
 app.get("/",(req,res)=>{
